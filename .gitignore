@@ -1,0 +1,10 @@
+#
+# Archivo .gitignore para el control de versiones del proyecto TFG de Antonio Viñuelas Perales
+#
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/

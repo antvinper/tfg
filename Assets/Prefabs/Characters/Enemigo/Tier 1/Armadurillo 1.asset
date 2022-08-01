@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ab8ac690b182554e93072ec65c98297, type: 3}
+  m_Name: Armadurillo 1
+  m_EditorClassIdentifier: 
+  unitName: Armadurillo
+  level: 3
+  maxHP: 55
+  currentHP: 55
+  attackPower: 3
+  magicPower: 0
+  armor: 4
+  magicResist: 4
+  exp: 0
+  sprite: {fileID: 21300000, guid: a72a10227b19dd04aa62e84beb937d48, type: 3}
+  weapon: {fileID: 0}
