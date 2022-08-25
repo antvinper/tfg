@@ -85,16 +85,25 @@ public class BattleSystem : MonoBehaviour
                     break;
             }
         }
-        player = players[MainManager.Instance.playerPicker];
-        indiceCambio = MainManager.Instance.playerPicker;
 
-        if(MainManager.Instance.playerPicker == 0)
+        int auxPicker = MainManager.Instance.playerPicker;
+
+        while(players[auxPicker].currentHP == 0)
+        {
+            auxPicker++;
+            if (auxPicker > 2) auxPicker = 0;
+        }
+
+        player = players[auxPicker];
+        indiceCambio = auxPicker;
+
+        if (auxPicker == 0)
         {
             ganaExp0 = true;
-        }else if(MainManager.Instance.playerPicker == 1)
+        }else if(auxPicker == 1)
         {
             ganaExp1 = true;
-        }else if(MainManager.Instance.playerPicker == 2)
+        }else if(auxPicker == 2)
         {
             ganaExp2 = true;
         }
@@ -209,7 +218,7 @@ public class BattleSystem : MonoBehaviour
         else
         {
             state = BattleState.LOST;
-            EndBattle();
+            StartCoroutine(EndBattle());
         }
     }
 
@@ -236,7 +245,8 @@ public class BattleSystem : MonoBehaviour
         else if(state == BattleState.LOST)
         {
             dialogueText.text = "Has sido derrotado...";
-            MainManager.Instance.worldLevel = 1;
+            yield return new WaitForSeconds(3.0f);
+            MainManager.Instance.worldLevel = 0;
             players[0].currentHP = players[0].maxHP;
             players[1].currentHP = players[1].maxHP;
             players[2].currentHP = players[2].maxHP;

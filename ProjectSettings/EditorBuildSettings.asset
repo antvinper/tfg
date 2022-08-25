@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FinalDelJuego.unity
     guid: c0443dcf866a3124cb5965fccd8f8aa9
+  - enabled: 1
+    path: Assets/Scenes/Derrota.unity
+    guid: d1befe204829c8b49a9ba0053b452d41
   m_configObjects: {}

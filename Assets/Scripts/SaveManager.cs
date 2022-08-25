@@ -35,6 +35,7 @@ public class SaveManager : MonoBehaviour
     public void NuevaPartida()
     {
         progress = 0;
+        MainManager.Instance.worldLevel = progress;
 
         // Personaje 1
         p0.SetStats(1, 35, 35, 5, 0, 4, 1, 0);

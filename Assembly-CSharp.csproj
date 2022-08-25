@@ -56,30 +56,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\AssetStoreOriginals\_SNAPS_PrototypingAssets\About\Scripts\Readme.cs" />
-     <Compile Include="Assets\Scripts\BattleHUD.cs" />
-     <Compile Include="Assets\Scripts\BattleSystem.cs" />
-     <Compile Include="Assets\Scripts\BossBattleSystem.cs" />
-     <Compile Include="Assets\Scripts\BotonEsc.cs" />
-     <Compile Include="Assets\Scripts\CameraFollow.cs" />
-     <Compile Include="Assets\Scripts\ChangeHUD.cs" />
-     <Compile Include="Assets\Scripts\Character.cs" />
-     <Compile Include="Assets\Scripts\EnemySpawn.cs" />
-     <Compile Include="Assets\Scripts\EnterCombat.cs" />
-     <Compile Include="Assets\Scripts\EquipoHUD.cs" />
-     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
-     <Compile Include="Assets\Scripts\GameSystem.cs" />
-     <Compile Include="Assets\Scripts\HealingSystem.cs" />
-     <Compile Include="Assets\Scripts\InGameMenu.cs" />
-     <Compile Include="Assets\Scripts\MainManager.cs" />
-     <Compile Include="Assets\Scripts\MainMenu.cs" />
-     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-     <Compile Include="Assets\Scripts\ResolutionManager.cs" />
-     <Compile Include="Assets\Scripts\SaveData.cs" />
-     <Compile Include="Assets\Scripts\SaveManager.cs" />
-     <Compile Include="Assets\Scripts\SaveSystem.cs" />
-     <Compile Include="Assets\Scripts\TeamManager.cs" />
-     <Compile Include="Assets\Scripts\TextBlink.cs" />
-     <Compile Include="Assets\Scripts\Weapon.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -685,6 +661,10 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="MainAssembly.csproj">
+      <Project>{8E5AB313-2C7C-4CE7-D630-5C766283301C}</Project>
+      <Name>MainAssembly</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

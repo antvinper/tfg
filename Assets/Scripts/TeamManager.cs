@@ -13,6 +13,28 @@ public class TeamManager : MonoBehaviour
 
     int actualPos = MainManager.Instance.playerPicker;
 
+    // Cuando se inicializa la escena, comprueba qué personaje dejo el jugador en primer puesto
+    public void Start()
+    {
+        if (actualPos == 0)
+        {
+            return;
+        }
+        else if (actualPos == 1)
+        {
+            SwapPositions();
+            actualPos = 1;
+            MainManager.Instance.playerPicker = actualPos;
+        }
+        else if (actualPos == 2)
+        {
+            SwapPositions();
+            SwapPositions();
+            actualPos = 2;
+            MainManager.Instance.playerPicker = actualPos;
+        }
+    }
+
     public void SwapPositions()
     {
         tempPosition1 = a.transform.position;

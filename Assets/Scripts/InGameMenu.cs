@@ -40,7 +40,7 @@ public class InGameMenu : MonoBehaviour
         SceneManager.LoadScene("Mapa01");
     }
 
-    public void Salir()
+    public void ConfirmarSalir()
     {
         Application.Quit();
     }

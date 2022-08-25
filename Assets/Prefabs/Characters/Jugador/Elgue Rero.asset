@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: Elgue Rero
   m_EditorClassIdentifier: 
   unitName: Elgue Rero
-  level: 1
-  maxHP: 35
-  currentHP: 0
-  attackPower: 5
+  level: 6
+  maxHP: 44
+  currentHP: 44
+  attackPower: 1009
   magicPower: 0
-  armor: 4
-  magicResist: 1
-  exp: 0
+  armor: 12
+  magicResist: 3
+  exp: 67
   sprite: {fileID: 21300000, guid: 72f9e38f0c30b384db41121344e49a9e, type: 3}
   weapon: {fileID: 11400000, guid: a55a1574cb967a24c8dfbc635f0edd98, type: 2}

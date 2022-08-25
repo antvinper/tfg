@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.IO;
 
 public class MainMenu : MonoBehaviour
 {
     public SaveManager saveManager;
+    public GameObject textoErrorCarga;
 
     public void NewGame()
     {
@@ -17,8 +19,18 @@ public class MainMenu : MonoBehaviour
     public void ContinueGame()
     {
         Debug.Log("Cargando datos de la partida guardada");
-        saveManager.CargarPartida();
-        SceneManager.LoadScene("Mapa01");
+        string path = Application.persistentDataPath + "/save.data";
+        if (File.Exists(path))
+        {
+            saveManager.CargarPartida();
+            SceneManager.LoadScene("Mapa01");
+        }
+        else
+        {
+            this.gameObject.SetActive(false);
+            textoErrorCarga.SetActive(true);
+        }
+            
     }
 
     public void QuitGame()

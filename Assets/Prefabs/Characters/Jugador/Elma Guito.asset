@@ -15,7 +15,7 @@ MonoBehaviour:
   unitName: Elma Guito
   level: 1
   maxHP: 30
-  currentHP: 0
+  currentHP: 30
   attackPower: 2
   magicPower: 4
   armor: 2

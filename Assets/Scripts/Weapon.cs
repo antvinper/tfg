@@ -12,4 +12,10 @@ public class Weapon : ScriptableObject
     public Tipo tipo;
     public int fuerza;
     public Sprite sprite;
+
+    public void SetStats(Tipo newTipo, int newFuerza)
+    {
+        tipo = newTipo;
+        fuerza = newFuerza;
+    }
 }

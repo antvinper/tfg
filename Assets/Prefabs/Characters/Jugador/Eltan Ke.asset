@@ -15,7 +15,7 @@ MonoBehaviour:
   unitName: Eltan Ke
   level: 1
   maxHP: 42
-  currentHP: 0
+  currentHP: 42
   attackPower: 5
   magicPower: 0
   armor: 6
