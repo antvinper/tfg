@@ -71,7 +71,7 @@ public class BattleSystem : MonoBehaviour
         }
         else
         {
-            enemyPicker = Random.Range(0, 2);
+            enemyPicker = Random.Range(0, 3);
             switch (worldLevel)
             {
                 case 0:
@@ -469,9 +469,9 @@ public class BattleSystem : MonoBehaviour
         {
             dialogueText.text = "¡Has logrado escapar!";
             yield return new WaitForSeconds(1.0f);
-            SceneManager.LoadScene("Mapa01", LoadSceneMode.Single);
             enemyCharacter.currentHP = enemyCharacter.maxHP;
             MainManager.Instance.isBoss = false;
+            SceneManager.LoadScene("Mapa01", LoadSceneMode.Single);
         }
         else
         {

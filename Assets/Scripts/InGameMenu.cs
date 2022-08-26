@@ -33,11 +33,9 @@ public class InGameMenu : MonoBehaviour
         Debug.Log("Partida guardada con éxito");
     }
 
-    public void Cargar()
+    public void VolverAlMenuPrincipal()
     {
-        saveManager.CargarPartida();
-        Debug.Log("Partida cargada con éxito");
-        SceneManager.LoadScene("Mapa01");
+        SceneManager.LoadScene("MenuPrincipal");
     }
 
     public void ConfirmarSalir()

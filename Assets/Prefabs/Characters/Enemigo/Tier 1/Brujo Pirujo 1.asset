@@ -15,11 +15,11 @@ MonoBehaviour:
   unitName: Brujo Pirujo
   level: 2
   maxHP: 25
-  currentHP: 18
+  currentHP: 25
   attackPower: 2
   magicPower: 5
   armor: 1
   magicResist: 4
   exp: 0
-  sprite: {fileID: 21300000, guid: a72a10227b19dd04aa62e84beb937d48, type: 3}
-  weapon: {fileID: 11400000, guid: de366934eca6a9742b3b0b7d9d07649e, type: 2}
+  sprite: {fileID: 21300000, guid: 77d30a8fe09d85042a52e26911db9058, type: 3}
+  weapon: {fileID: 11400000, guid: 5e455bed47ca2114ba37f7d28ee456dd, type: 2}

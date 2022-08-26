@@ -21,5 +21,5 @@ MonoBehaviour:
   armor: 3
   magicResist: 7
   exp: 0
-  sprite: {fileID: 21300000, guid: c7ccddc797a8c3046aeff7c8627a1179, type: 3}
+  sprite: {fileID: 21300000, guid: 1186c1a13bcdaea4ab012730b44f9e8c, type: 3}
   weapon: {fileID: 11400000, guid: de366934eca6a9742b3b0b7d9d07649e, type: 2}
